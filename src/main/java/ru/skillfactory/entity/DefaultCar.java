@@ -16,4 +16,11 @@ public class DefaultCar implements ICar {
     public void setPressure(final float pedalPressure) {
         engine.setFuelConsumptionRate(pedalPressure);
     }
+
+    @Override
+    public void checkSpeed(float speed) {
+        if(speed>20){
+            System.out.println("Данный автомобиль нарушает установленный скоростной лимит");
+        }
+    }
 }

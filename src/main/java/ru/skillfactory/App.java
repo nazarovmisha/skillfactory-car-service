@@ -16,5 +16,8 @@ public class App {
 
         DefaultCar defaultCar = context.getBean(DefaultCar.class);
         System.out.println(defaultCar.getSpeed());
+
+        defaultCar.checkSpeed(defaultCar.getSpeed());
+
     }
 }

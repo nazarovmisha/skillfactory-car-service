@@ -5,4 +5,6 @@ public interface ICar {
     float getSpeed();
 
     void setPressure(float pressure);
+
+    void checkSpeed(float speed);
 }
